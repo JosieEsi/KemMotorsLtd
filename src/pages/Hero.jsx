@@ -206,9 +206,11 @@ const Hero = () => {
   return (
     <div className="w-full min-h-screen relative flex items-center justify-center z-30">
       {/* Shadow Circle (Visible on all screens) */}
-      <div className="absolute w-[400px] h-[300px] sm:w-[600px] sm:h-[450px] md:w-[700px] lg:w-[900px] xl:w-[1100px] 
+      <div className="absolute pointer-events-none w-[400px] h-[300px] sm:w-[600px] sm:h-[450px] md:w-[700px] lg:w-[900px] xl:w-[1100px] 2xl:w-[1500px]
           rounded-full -top-10 sm:-top-16 md:-top-24 -right-24 md:-right-48 xl:-right-96 
           -rotate-[35deg] bg-gradient-to-r from-gold via-zinc-950 to-transparent opacity-40 sm:opacity-50 z-0" />
+
+
 
       <Layout className="flex flex-col-reverse md:flex-row items-center justify-between max-sm:gap-0 gap-10 md:gap-20 z-50 relative">
         
@@ -250,3 +252,5 @@ const Hero = () => {
 };
 
 export default Hero;
+
+
